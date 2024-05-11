@@ -1,7 +1,8 @@
-particlesJS({
+document.addEventListener("DOMContentLoaded", function () {
+    particlesJS({
         "particles": {
             "number": {
-                "value": 25,
+                "value": 30,
                 "density": {
                     "enable": false,
                     "value_area": 800
@@ -14,7 +15,7 @@ particlesJS({
                 "type": "circle",
                 "stroke": {
                     "width": 0,
-                    "color": "#000000"
+                    "color": "#ffffff"
                 },
                 "polygon": {
                     "nb_sides": 5
@@ -36,7 +37,7 @@ particlesJS({
                 }
             },
             "size": {
-                "value": 6.1,
+                "value": 8,
                 "random": true,
                 "anim": {
                     "enable": false,
@@ -50,13 +51,13 @@ particlesJS({
                 "distance": 150,
                 "color": "#ffffff",
                 "opacity": 0.6471010661384636,
-                "width": 1
+                "width": 1.8
             },
             "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 2.8,
                 "direction": "none",
-                "random": false,
+                "random": true,
                 "straight": false,
                 "out_mode": "out",
                 "bounce": false,
@@ -108,3 +109,4 @@ particlesJS({
         },
         "retina_detect": true
     })
+}, !1);
