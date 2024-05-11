@@ -105,11 +105,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
+
+        // Efectos
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        background-color: transparent;
+        padding: 5px;
+        @include tablet{
+          width: 90%;
+        }
+      }
+      a:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 0, 0, 0.1);
       }
       picture {
-        width: 50%;
+        width: 100%;
         @include tablet{
-          width: 78%;
+          width: 100%;
         }
         img {
           max-width: 100%;
