@@ -24,14 +24,14 @@
     .proyectos__proyecto--structure-content{
       grid-row: 1/2;
       @include tablet {
-        grid-column: 1/2;
+        grid-column: 2/3;
       }
     }
     .proyectos__proyecto--structure-image{
       grid-row: 2/3;
       @include tablet {
         grid-row: 1/2;
-        grid-column: 2/3;
+        grid-column: 1/2;
       }
     }
   }
