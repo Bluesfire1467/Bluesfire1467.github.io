@@ -1,0 +1,82 @@
+.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: $principal;
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .main-display {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .layout {
+        h1 {
+          margin: 0;
+          line-height: 1;
+          color: $blanco;
+          font-size: 5rem;
+          font-weight: bold;
+          @include telefono{
+            font-size: 9.6rem;
+          }
+        }
+        p {
+          margin: 0;
+          color: $blanco;
+          text-align: center;
+          font-size: 2.4rem;
+          font-weight: 600;
+          @include telefono{
+            font-size: 3.2rem;
+          }
+        }
+        .social-media {
+          display: flex;
+          justify-content: center;
+          gap: 1.8rem;
+          .frame {
+            border: $blanco 2px solid;
+            border-radius: 50px;
+            width: 6.2rem;
+            height: 6.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.3rem;
+            .in {
+              width: 4.2rem;
+            }
+            svg {
+              width: 5rem;
+            }
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .frame:hover {
+            background-color: lighten($principal, 20);
+          }
+        }
+        .direc {
+          display: flex;
+          justify-content: center;
+          gap: 5rem;
+          a {
+            color: $blanco;
+            font-size: 2.4rem;
+            @include telefono{
+              font-size: 2.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

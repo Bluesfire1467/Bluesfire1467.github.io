@@ -1,0 +1,47 @@
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25rem;
+  h3 {
+    font-size: 3rem;
+    font-weight: $medio;
+    margin: 10rem 0 3rem 0;
+    @include tablet{
+      font-size: 5.2rem;
+    }
+  }
+  .knowledge__container {
+    display: grid;
+    @include grid(1, 2rem);
+    gap: 67px;
+
+    @include tablet {
+      display: grid;
+      @include grid(2, 2rem);
+    }
+    @include desktop {
+      display: flex;
+    }
+
+
+    .knowledge__container--cont{
+      min-width: 25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-size: 2.2rem;
+        @include tablet {
+          font-size: 2.8rem;
+        }
+      }
+      .knowledge__container--cont--grid {
+        @include grid(2, 2rem);
+        align-items: center;
+      }
+    }
+  }
+}
+// !TODO Falta adaptar esta parte a responsive con GRID

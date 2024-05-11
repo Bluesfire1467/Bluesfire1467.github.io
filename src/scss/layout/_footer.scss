@@ -1,0 +1,12 @@
+.footer {
+  height: 10rem;
+  background-color: $principal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $blanco;
+    font-size: 24px;
+    font-weight: $bold;
+  }
+}
